@@ -1,0 +1,92 @@
+// variables
+@import '../../styles/variables/colors';
+@import '../../styles/variables/mixins';
+
+// Homepage Style
+.footer-style {
+  background-color: $black;
+  height: 67px;
+  color: $white;
+  display: flex;
+  align-items: center;
+
+  .nav-link {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    color: $text-color;
+  }
+
+  .navbar-nav {
+    gap: 48px;
+  }
+
+  .active {
+    font-weight: 600;
+  }
+
+  .btn-join {
+    background: $theme-primary;
+    border-radius: 20px;
+    width: 152px;
+    height: 40px;
+    border: none;
+    font-size: 16px;
+
+    &:hover,
+    &:focus {
+      background: rgba($theme-primary, 0.7);
+    }
+  }
+
+  .left-section {
+    display: flex;
+  }
+
+  .copyright {
+    font-weight: 600;
+  }
+
+  .footer-nav {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .footer-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    &::before {
+      display: flex;
+      content: '';
+      width: 1px;
+      height: 100%;
+      background-color: #949CA0;
+      margin: 0 20px;
+    }
+  }
+
+  .footer-link {
+    color: $white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 300;
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    gap: 38.55px;
+    margin: 0;
+
+    .social-link {
+      color: $white;
+      font-size: 18px;
+    }
+  }
+}

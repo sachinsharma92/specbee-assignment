@@ -1,0 +1,45 @@
+// variables
+@import '../../styles/variables/colors';
+@import '../../styles/variables/mixins';
+
+// Homepage Style
+.header-style {
+  background-color: $white;
+  height: 90px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+
+  .nav-link {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    color: $text-color;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    &.active {
+
+      &::before {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -10px;
+        margin: 0 auto;
+        width: 34px;
+        height: 3px;
+        background-color: $theme-primary;
+        content: '';
+      }
+    }
+  }
+
+  .navbar-nav {
+    gap: 48px;
+  }
+
+  .active {
+    font-weight: 600;
+  }
+}

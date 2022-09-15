@@ -1,4 +1,4 @@
-@import './fonts';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@700&display=swap');
 
 // variables
 @import './variables/colors';
@@ -20,6 +20,35 @@ body {
   }
 }
 
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1366px;
+  }
+}
+
+// Button Join Style
+.btn-join {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  background: $theme-primary;
+  width: 152px;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: $white;
+  transition: all 0.5s ease-in-out;
+
+  &:hover,
+  &:focus {
+    background: rgba($theme-primary, 0.7);
+    color: $white;
+  }
+}
+
 .title1,
 .title2,
 .title3,
@@ -32,6 +61,27 @@ body {
   font-weight: 700;
   font-size: 82px;
   line-height: 98px;
+
+  &.title-lg {
+    font-size: 120px;
+    line-height: 98px;
+  }
+}
+
+.title3 {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 56px;
+
+  &.title-lg {
+    font-size: 120px;
+    line-height: 98px;
+  }
+}
+
+// theme-primary
+.theme-primary {
+  color: $theme-primary;
 }
 
 .no-scrollbar {

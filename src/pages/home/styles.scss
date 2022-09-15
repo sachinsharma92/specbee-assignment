@@ -4,5 +4,107 @@
 
 // Homepage Style
 .homepage-style {
-  background-color: red;
+
+  .hero-section {
+    text-align: center;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      content: '';
+      background: url("../../assets/images/circles.svg");
+      background-repeat: no-repeat;
+      background-position: right 70%;
+      background-size: 260px;
+    }
+
+    .description {
+      font-size: 32px;
+      margin: 0 auto;
+      font-weight: 400;
+    }
+
+    .arrow-down {
+      margin-top: 32px;
+    }
+  }
+
+  .image-banner-section {
+    min-height: calc(100vh - 90px);
+    background-color: $black;
+    color: $white;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+  }
+
+  .image-groups-section {
+    background-color: $black;
+    color: $white;
+    padding: 80px 0;
+
+    .scroll-section {
+      display: flex;
+      overflow-x: scroll;
+      gap: 46.09px;
+    }
+  }
+
+  // section-tortor
+  .section-tortor {
+    padding: 79px 0;
+
+    .title3 {
+      padding-right: 100px;
+    }
+
+    .button-arrow-section {
+      margin-top: 79px;
+      display: flex;
+      align-items: center;
+
+      .arrow-long {
+        margin-right: 51px;
+      }
+    }
+  }
+
+  // Six Million Section
+  .six-million-section {
+    margin-bottom: 130px;
+
+    .title-lg {
+      margin-bottom: 48px;
+    }
+
+    .para-style {
+      max-width: 60%;
+    }
+  }
+
+  // Consectetur Section
+  .consectetur-section {
+    display: flex;
+    align-items: center;
+    padding: 80px 0;
+
+    .description {
+      max-width: 520px;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 32px;
+
+      span {
+        font-weight: 600;
+      }
+    }
+  }
 }
